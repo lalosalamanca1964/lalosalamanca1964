@@ -6,25 +6,31 @@ body {
     background-color: black;
 }
 
-.maindiv {
-    width: 200px;
-    height: 500px;
-    border: 5px solid white;
-    border-radius: 45px;
-    background-image: linear-gradient(to left, lightskyblue, green);
-    margin-left: 5%;
+#head
+#title {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 75%;
+    border: 3px dotted white;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    translate: -50px;
 }
 
-.innerdiv {
-    text-align: center;
-}
-
-a:link, a:visited {
+#title span {
     color: white;
-    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 250%;
 }
 
-a:hover, a:active {
-    color: whitesmoke;
-    text-decoration: none;
+#title img {
+    background-color: transparent;
+    width: 40px;
+    height: 40%;
+   
 }
