@@ -70,6 +70,36 @@ body {
     text-decoration: none;
 }
 
+#mainlistflex {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 1000px;
+    border: 3px dotted white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#serverflex {
+    display: flex;
+    width: 300px;
+    height: 250px;
+    border: 3px dotted white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#serverflex img{
+    width: 100px;
+    height: 100px;
+    align-self: flex-start;
+    justify-content: flex-start;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 800px) {
     #title {
         width: 100%;
@@ -80,16 +110,44 @@ body {
     #burgerinfo {
         width: 95%;
     }
+    #mainlistflex {
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 800px) {
     #title span {
         font-size: 40px;
     }
+    #mainlistflex {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1000) {
+    #mainlistflex {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1500) {
+    #mainlistflex {
+        width: 85%;
+    }
 }
 
 @media screen and (max-width: 500px) {
     #burgerinfo span {
         font-size: 3.5cqw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #mainlistflex {
+        display: block;
+        height: 1750px;
+    }
+    #serverflex {
+        margin-top: 25px;
     }
 }
