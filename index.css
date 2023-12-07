@@ -47,7 +47,8 @@ body {
     background-color: transparent;
     width: 40px;
     height: 40%;
-   
+    border-radius: 50%;
+    border: 3px solid white
 }
 
 #burgerinfo {
@@ -185,6 +186,9 @@ body {
         width: 12cqw;
         height: 12cqw;
         margin-top: auto;
+    }
+    #mainflex span {
+        font-size: 4cqw;
     }
 }
 
