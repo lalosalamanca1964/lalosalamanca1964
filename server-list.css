@@ -165,6 +165,12 @@ body {
     #burgerinfo span {
         font-size: 3.5cqw;
     }
+    #serverflex {
+        width: 250px
+    }
+    #serverflex span {
+        font-size: large;
+    }
 }
 
 @media screen and (max-width: 700px) {
