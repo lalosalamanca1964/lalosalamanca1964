@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+@keyframes rotate {
+    33% {transform: rotate(10deg)}
+    66% {transform: rotate(-10deg)}
+}
+
 body {
     background-color: black;
 }
@@ -38,10 +43,11 @@ body {
 }
 
 #title img {
-    background-color: transparent;
-    width: 40px;
-    height: 40%;
-   
+    width: 80px;
+    height: 80%;
+    border: 4px solid white;
+    border-radius: 50%;
+    animation: rotate 5s infinite;
 }
 
 #burgerinfo {
@@ -82,22 +88,41 @@ body {
 
 #serverflex {
     display: flex;
+    flex-flow: column;
     width: 300px;
     height: 250px;
-    border: 3px dotted white;
+    border: 3px solid white;
+    border-radius: 25px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    background-image: linear-gradient(to right, rgb(14, 132, 14), lightskyblue);
+    z-index: -1;
 }
 
-#serverflex img{
-    width: 100px;
-    height: 100px;
-    align-self: flex-start;
-    justify-content: flex-start;
+#serverflex img {
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
     border: 3px solid white;
     border-radius: 50%;
+}
+
+#serverflex span {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#serverflex a {
+    text-decoration: none;
+    color: white;
 }
 
 @media screen and (max-width: 800px) {
