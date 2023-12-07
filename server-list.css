@@ -138,6 +138,9 @@ body {
     #mainlistflex {
         width: 90%;
     }
+    #featuredflex {
+      width: 15cqw;
+    }
 }
 
 @media screen and (min-width: 800px) {
