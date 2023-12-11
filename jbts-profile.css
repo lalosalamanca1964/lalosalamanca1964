@@ -38,7 +38,19 @@ body {
     position: -webkit-sticky;
     top: 0;
     border-collapse: collapse;
-    background-image: linear-gradient(to right, red, lightskyblue);
+    background-image: linear-gradient(
+  45deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(289deg 100% 21%) 11%,
+  hsl(315deg 100% 27%) 22%,
+  hsl(329deg 100% 36%) 33%,
+  hsl(337deg 100% 43%) 44%,
+  hsl(357deg 91% 59%) 56%,
+  hsl(17deg 100% 59%) 67%,
+  hsl(34deg 100% 53%) 78%,
+  hsl(45deg 100% 50%) 89%,
+  hsl(55deg 100% 50%) 100%
+);
 }
 
 #title span {
@@ -64,7 +76,7 @@ body {
     display: flex;
     border: 3px solid white;
     border-radius: 30px;
-    background-image: linear-gradient(to right, red, lightskyblue);
+    background-color: black;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-evenly;
@@ -84,6 +96,7 @@ body {
 
 #mainflex {
     display: flex;
+    flex-flow: row wrap;
     width: 100%;
     height: 1000px;
     border: 3px dotted white;
@@ -131,7 +144,8 @@ body {
 }
 
 #communitybox {
-    display: block;
+    display: flex;
+    flex-flow: row wrap;
     width: 400px;
     height: 300px;
     border: 5px solid white;
@@ -140,6 +154,81 @@ body {
     margin-left: auto;
     margin-right: 25px;
     rotate: 3deg;
+}
+
+#communityboxtop {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border-bottom: 5px solid white;
+    align-items: center;
+    justify-content: center;
+}
+
+#communityboxtop h2 {
+    color: white;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#communityboxleft {
+    width: 50%;
+    display: flex;
+    height: 190px;
+    border-right: 5px solid white;
+    flex-flow: column;
+    align-items: center;
+}
+
+#communityboxleft span {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#communityboxright {
+    width: 50%;
+    display: flex;
+    height: 190px;
+    flex-flow: column;
+    align-items: center;
+}
+
+#communityboxright img {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+#communityboxright a {
+    margin-bottom: auto;
+    color: white;
+}
+
+#communityboxright span {
+    color: white;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#giveawaybox {
+    display: flex;
+    width: 400px;
+    height: 300px;
+    border: 3px dotted white;
+    border-radius: 25px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: 25px;
+    rotate: -3deg;
+}
+
+#staffbox {
+    width: 400px;
+    height: 300px;
 }
 
 @media screen and (max-width: 800px) {
@@ -160,20 +249,29 @@ body {
     }
 }
 
-@media screen and (min-width: 1000) {
-
-}
-
-@media screen and (min-width: 1500) {
-    
-}
-
 @media screen and (max-width: 500px) {
     #burgerinfo span {
         font-size: 3.5cqw;
     }
 }
 
-@media screen and (max-width: 700px) {
-    
+@media screen and (max-width: 900px) {
+    #mainflex {
+        display: block;
+        height: 1500px;
+    }
+    #communitybox {
+        margin-top: 125px;
+    }
+    #giveawaybox {
+        margin-top: 125px;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    #mainflex {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
