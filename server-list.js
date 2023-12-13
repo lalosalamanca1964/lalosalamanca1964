@@ -1,5 +1,5 @@
 const JBDinfo = {
-    membercount: "127"
+    membercount: "37658"
 };
 
 document.getElementById("JBDMemCountFSL").innerHTML = JBDinfo.membercount; 
@@ -29,42 +29,72 @@ const JBNinfo = {
 document.getElementById("JBNMemCountFSL").innerHTML = JBNinfo.membercount; 
 //JBN---------------!
 
-//Member Count High to Low Sorting Method--------!
+//JBB---------------!
+const JBBinfo = {
+    membercount: "658"
+};
 
-function sortList() {
-    let mainListFlexContainer = document.getElementById("mainlistflex");
+document.getElementById("JBBMemCountFSL").innerHTML = JBBinfo.membercount; 
+//JBB---------------!
 
-    let serverFlexDivs = document.querySelectorAll(".serverflex");
+//RTHQ---------------!
+const RTHQinfo = {
+    membercount: "727"
+};
 
-    let existingDivs = Array.from(serverFlexDivs);
+document.getElementById("RTHQMemCountFSL").innerHTML = RTHQinfo.membercount; 
+//RTHQ---------------!
 
-    let objectsArray = [JBDinfo, JBTSinfo, JBVinfo, JBNinfo];
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM content loaded");
 
-    objectsArray.sort((a , b) => b.membercount - a.membercount);
+    var serverContainer = document.getElementById('mainlistflex');
+    var serverArray = Array.from(document.querySelectorAll('.serverflex'));
 
-    let indexMapping = {};
-    existingDivs.forEach((div , index) => {
-        let divObjectId = div.Id1;
-        indexMapping[index] = objectsArray.findIndex((obj) => obj.objectId === divObjectId);
-    });
+    // Function to update member count in HTML
+    function updateMemberCount(serverId, membercount) {
+        document.getElementById(serverId + "MemCountFSL").innerHTML = membercount;
+    }
 
-    existingDivs.sort((a , b) => indexMapping[existingDivs.indexOf(b)] - indexMapping[existingDivs.indexOf(a)]);
-
-    existingDivs.forEach((div) => {
-        mainListFlexContainer.appendChild(div);
-    });
-
-    console.log("existingDivs: ", existingDivs);
-
-    console.log("objectsArray: ", objectsArray);
-
-    console.log("indexMapping: ", indexMapping);
+    // Function to get member count from a server element
+function getMemberCount(serverElement) {
+    var countElement = serverElement.querySelector('.serverflex span[id$="MemCountFSL"]');
+    return parseInt(countElement.innerText) || 0;
 }
 
-sortList()
+    // Function to sort servers using CSS order property
+function sortServers(ascending) {
+    console.log("Sorting servers");
 
-//Member Count High to Low Sorting Method--------!
+    serverArray.sort(function (a, b) {
+        var memberCountA = getMemberCount(a);
+        var memberCountB = getMemberCount(b);
 
-//Rearranging Flex Boxes Method---!
+        console.log("Comparing:", memberCountA, memberCountB, a, b);
 
-//Rearranging Flex Boxes Method---!
+        return ascending ? memberCountA - memberCountB : memberCountB - memberCountA;
+    });
+
+    console.log("Sorted Array Length:", serverArray.length);
+
+    // Apply the new order values to the sorted server divs
+    serverArray.forEach(function (server, index) {
+        server.style.order = index + 1;
+    });
+}
+
+    // Example: Sorting in ascending order
+    document.getElementById('sort-ascending-btn').addEventListener('click', function () {
+        console.log("Sort Ascending button clicked");
+        sortServers(true);
+    });
+
+    // Example: Sorting in descending order
+    document.getElementById('sort-descending-btn').addEventListener('click', function () {
+        console.log("Sort Descending button clicked");
+        sortServers(false);
+    });
+
+    // Log initial order before sorting
+    console.log("Before Sorting:", serverArray);
+});
