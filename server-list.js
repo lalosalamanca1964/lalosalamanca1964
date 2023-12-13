@@ -1,23 +1,70 @@
+const JBDinfo = {
+    membercount: "127"
+};
+
+document.getElementById("JBDMemCountFSL").innerHTML = JBDinfo.membercount; 
+//JBDistrict
+
+//JBTS---------------!
 const JBTSinfo = {
-    gif:"IMG_8198.GIF",
-    name:"Jailbreak Trading Shifters",
-    infoName:"JBTS",
-    membercount:"1276",
-    focus:"Trading",
-    serverImage:"IMG_7798.jpeg",
-    serverLink:"discord.gg/jbv"
-}
+    membercount: "1276"
+};
 
-document.getElementById("MemCountFSL").innerHTML = JBTSinfo.membercount; 
+document.getElementById("JBTSMemCountFSL").innerHTML = JBTSinfo.membercount; 
+//JBTS---------------!
 
+//JBV---------------!
 const JBVinfo = {
-    gif:"jbvalues_banner.gif",
-    name:"JB Values (JBV)",
-    infoName:"JBV",
-    membercount:"2257",
-    focus:"Values",
-    serverImage:"IMG_7798.jpeg",
-    serverLink:"discord.gg/jbv"
-}
+    membercount: "46758"
+};
 
 document.getElementById("JBVMemCountFSL").innerHTML = JBVinfo.membercount; 
+//JBV---------------!
+
+//JBN---------------!
+const JBNinfo = {
+    membercount: "2132"
+};
+
+document.getElementById("JBNMemCountFSL").innerHTML = JBNinfo.membercount; 
+//JBN---------------!
+
+//Member Count High to Low Sorting Method--------!
+
+function sortList() {
+    let mainListFlexContainer = document.getElementById("mainlistflex");
+
+    let serverFlexDivs = document.querySelectorAll(".serverflex");
+
+    let existingDivs = Array.from(serverFlexDivs);
+
+    let objectsArray = [JBDinfo, JBTSinfo, JBVinfo, JBNinfo];
+
+    objectsArray.sort((a , b) => b.membercount - a.membercount);
+
+    let indexMapping = {};
+    existingDivs.forEach((div , index) => {
+        let divObjectId = div.Id1;
+        indexMapping[index] = objectsArray.findIndex((obj) => obj.objectId === divObjectId);
+    });
+
+    existingDivs.sort((a , b) => indexMapping[existingDivs.indexOf(b)] - indexMapping[existingDivs.indexOf(a)]);
+
+    existingDivs.forEach((div) => {
+        mainListFlexContainer.appendChild(div);
+    });
+
+    console.log("existingDivs: ", existingDivs);
+
+    console.log("objectsArray: ", objectsArray);
+
+    console.log("indexMapping: ", indexMapping);
+}
+
+sortList()
+
+//Member Count High to Low Sorting Method--------!
+
+//Rearranging Flex Boxes Method---!
+
+//Rearranging Flex Boxes Method---!
