@@ -53,3 +53,29 @@ function JBV() {
 
 if (urlParams.has("JBV")) {JBV();}
 //JBV---------------!
+
+//JBN---------------!
+const JBNinfo = {
+    gif:"",
+    name:"Jailbreak Nation",
+    infoName:"JBN",
+    membercount:"2132",
+    date:"11/06/22",
+    focus:"Trading",
+    serverImage:"B7B1F86D-8AA9-490C-B97A-CED3AB62AE29_1_201_a.jpeg",
+    serverLink:"discord.gg/jbn"
+}
+
+function JBN() {
+    document.getElementById("nameboxtoptext").innerHTML = JBNinfo.name; 
+    document.getElementById("ServerGif").src = JBNinfo.gif;
+    document.getElementById("InfoTop").innerHTML = JBNinfo.infoName + " - Info"; 
+    document.getElementById("Members").innerHTML = "Members - " + JBNinfo.membercount;
+    document.getElementById("CreDate").innerHTML = "Created - " + JBNinfo.date;
+    document.getElementById("Focus").innerHTML = "Focus - " + JBNinfo.focus;
+    document.getElementById("ServerImg").src = JBNinfo.serverImage;
+    document.getElementById("ServerLink").href = JBNinfo.serverLink;
+}
+
+if (urlParams.has("JBN")) {JBN();}
+//JBN---------------!
