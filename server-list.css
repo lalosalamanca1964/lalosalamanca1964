@@ -94,6 +94,51 @@ body {
     text-decoration: none;
 }
 
+#sortingdiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid transparent;
+    margin-top: 10px;
+    height: 75px;
+}
+
+#sortingdiv span {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#buttondiv {
+    border: 2px solid transparent;
+}
+
+#sort-ascending-btn {
+    border: 3px solid white;
+    border-radius: 25px;
+    color: white;
+    background-color: black;
+    height: 30px;
+    width: 150px;
+}
+
+#sort-ascending-btn:hover {
+    cursor: pointer;
+}
+
+#sort-descending-btn {
+    border: 3px solid white;
+    border-radius: 25px;
+    color: white;
+    background-color: black;
+    height: 30px;
+    width: 150px;
+}
+
+#sort-descending-btn:hover  {
+    cursor: pointer;
+}
+
 #mainlistflex {
     display: flex;
     flex-wrap: wrap;
