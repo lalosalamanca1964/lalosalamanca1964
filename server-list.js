@@ -1,9 +1,18 @@
+//JBTC------------!
+const JBTCinfo = {
+    membercount: "25789"
+};
+
+document.getElementById("JBTCMemCountFSL").innerHTML = JBTCinfo.membercount; 
+//JBTC------------!
+
+//JBDistrict---------!
 const JBDinfo = {
     membercount: "37658"
 };
 
 document.getElementById("JBDMemCountFSL").innerHTML = JBDinfo.membercount; 
-//JBDistrict
+//JBDistrict---------!
 
 //JBTS---------------!
 const JBTSinfo = {
@@ -13,9 +22,9 @@ const JBTSinfo = {
 document.getElementById("JBTSMemCountFSL").innerHTML = JBTSinfo.membercount; 
 //JBTS---------------!
 
-//JBV---------------!
+//JBV----------------!
 const JBVinfo = {
-    membercount: "46758"
+    membercount: "47095"
 };
 
 document.getElementById("JBVMemCountFSL").innerHTML = JBVinfo.membercount; 
@@ -23,7 +32,7 @@ document.getElementById("JBVMemCountFSL").innerHTML = JBVinfo.membercount;
 
 //JBN---------------!
 const JBNinfo = {
-    membercount: "2132"
+    membercount: "2035"
 };
 
 document.getElementById("JBNMemCountFSL").innerHTML = JBNinfo.membercount; 
@@ -39,7 +48,7 @@ document.getElementById("JBBMemCountFSL").innerHTML = JBBinfo.membercount;
 
 //RTHQ---------------!
 const RTHQinfo = {
-    membercount: "727"
+    membercount: "1062"
 };
 
 document.getElementById("RTHQMemCountFSL").innerHTML = RTHQinfo.membercount; 
