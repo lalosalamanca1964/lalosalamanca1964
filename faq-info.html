@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="faq-info.css">
+    <title>JB Directory - More Info</title>
+    <script src="index.js"></script>
 </head>
 <body>
-    
+    <div id="head">
+        <div id="title">
+            <img src="2AF7929F-B336-4D02-895F-95F2E22C637C_1_201_a.jpeg" style="height: 75%; width: 75px; border: 3px solid white; border-radius: 50%;">
+            <span>Jailbreak Directory</span>
+        </div>
+    </div>
+    <div id="burgerinfo">
+        <a href="index.html"><span>Home</span></a> <a href="giveaway-tracker.html"><span>Giveaway Tracker</span></a> <a href="server-list.html"><span>Full Server List</span></a> <a href="faq-info.html"><span>Info/FAQ</span></a>
+    </div>
+    <div id="bulkflex">
+        <div id="questionbar" type="button"
+            onclick="document.getElementById('answerdropdown').style.display = 'flex'";>
+            <span>
+                What is the Jailbreak Directory?
+            </span>
+        </div>
+        <div id="answerdropdown">
+            <span>
+                The purpose of this site is to provide users an expansive list of Discord servers related to Jailbreak, a Roblox game, and its trading aspect. Users will be able to find in-depth information about these servers to help them find just the community they are looking for.
+            </span>
+            <button class="closebutton" type="button"
+            onclick="document.getElementById('answerdropdown').style.display = 'none'">
+                    <span>Close</span>
+            </button>
+        </div>
+
+        <div id="questionbar" type="button"
+        onclick="document.getElementById('answerdropdown2').style.display = 'flex'";>
+            <span>
+                Who is the creator/owner of this site?
+            </span>
+        </div>
+        <div id="answerdropdown2">
+            <span>
+                Hi! My Discord username is lalosalamanca1964, those who know me on Discord call me lalo. This is my first website I have ever made and I am constantly trying to improve my web development and programming skills. Feel free to contact me if you have any advice or questions!
+            </span>
+            <button class="closebutton" type="button"
+            onclick="document.getElementById('answerdropdown2').style.display = 'none'";>
+                    <span>Close</span>
+            </button>
+        </div>
+    </div>
 </body>
 </html>
