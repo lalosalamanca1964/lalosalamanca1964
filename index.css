@@ -21,6 +21,7 @@ body {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    z-index: 1;
 }
 
 #title {
@@ -82,6 +83,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     background-color: black;
+    z-index: 1;
 }
 
 #burgerinfo span {
@@ -95,64 +97,227 @@ body {
 }
 
 #mainflex {
-    position: static;
     display: flex;
+    flex-flow: row wrap;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    height: 1000px;
-    flex-direction: column;
-    align-items: center;
-    top: 50px;
+    width: 75%;
+    height: 1250px;
+    border: 3px dotted transparent;
+    border-radius: 25px;
+    margin-top: 50px;
+    z-index: -1;
 }
 
-#mainflex span {
+#welcomeflex {
+    display: flex;
+    flex-flow: column;
+    width: 400px;
+    height: 250px;
+    border: 3px solid white;
+    border-radius: 45px;
+    margin-left: 15px;
+    margin-top: 15px;
+    rotate: -3deg;
+}
+
+#welcomeflex h1 {
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 3cqw;
-    text-align: center;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 25px;
+    z-index: inherit;
+    border-top: 3px solid white;
+}
+
+#welcomeflex img {
+    width: 150px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
 }
 
 #featuredflex {
     display: flex;
-    position: static;
-    justify-content: space-evenly;
+    flex-flow: column;
+    align-items: center;
+    width: 400px;
+    height: 900px;
     border: 3px solid white;
-    border-radius: 20px;
-    width: 75%;
-    height: 250px;
-    margin-top: 50px;
-    background-color: black;
+    border-radius: 45px;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 25px;
 }
 
-#featuredflextop {
-    display: flex;
-    justify-content: start;
-    width: 100%;
-    height: 100px;
-    border: 3px solid white;
-    border-radius: 15px;
-    align-items: start;
-    background-color: black;
-}
-
-#featuredflex img {
-    width: 7cqw;
-    height: 7cqw;
-    border-radius: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
-    border: 3px solid white;
-}
-
-#featuredflextop span {
+#featuredflex h2 {
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2cqw;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 5%;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+#featuredflex a {
+    text-decoration: none;
+    color: white;
+    margin-top: 0px;
+}
+
+#featuredflex button {
+    width: 150px;
+    height: 30px;
+    border: 3px solid white;
+    border-radius: 45px;
+    color: white;
+    background-color: black;
+}
+
+#featuredflex button:hover {
+    cursor: pointer;
+}
+
+#featuredserver {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 350px;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 25px;
+    margin-top: 45px;
+    rotate: 2deg;
+}
+
+#featuredserver img {
+    height: 75px;
+    width: 75px;
+    border: 3px solid white;
+    border-radius: 50%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#featuredserver h3 {
+    font-size: 25px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 35px;
+}
+
+#featuredserver a {
+    text-decoration: none;
+    color: white;
+}
+
+#featuredserver button {
+    width: 175px;
+    height: 35px;
+    border: 3px solid white;
+    border-radius: 45px;
+    color: white;
+    background-color: black;
+}
+
+#featuredserver button:hover {
+    cursor: pointer;
+}
+
+#featuredserver2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 350px;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 25px;
+    margin-top: 45px;
+    rotate: -2deg;
+}
+
+#featuredserver2 img {
+    height: 75px;
+    width: 75px;
+    border: 3px solid white;
+    border-radius: 50%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#featuredserver2 h3 {
+    font-size: 25px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 35px;
+}
+
+#featuredserver2 a {
+    text-decoration: none;
+    color: white;
+}
+
+#featuredserver2 button {
+    width: 175px;
+    height: 35px;
+    border: 3px solid white;
+    border-radius: 45px;
+    color: white;
+    background-color: black;
+}
+
+#featuredserver2 button:hover {
+    cursor: pointer;
+}
+
+#featuredserver3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 350px;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 25px;
+    margin-top: 45px;
+    rotate: 2deg;
+}
+
+#featuredserver3 img {
+    height: 75px;
+    width: 75px;
+    border: 3px solid white;
+    border-radius: 50%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#featuredserver3 h3 {
+    font-size: 25px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 35px;
+    width: 225px;
+}
+
+#featuredserver3 a {
+    text-decoration: none;
+    color: white;
+}
+
+#featuredserver3 button {
+    width: 175px;
+    height: 35px;
+    border: 3px solid white;
+    border-radius: 45px;
+    color: white;
+    background-color: black;
+}
+
+#featuredserver3 button:hover {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
@@ -162,34 +327,111 @@ body {
     #title span {
     font-size: 5cqw;
     }
-    #mainflex {
-        width: 75%;
-    }
-    #mainflex span {
-        font-size: 4cqw;
-    }
-    #featuredflex span {
-        font-size: 3.5cqw;
-    }
     #burgerinfo {
         width: 95%;
     }
-    #featuredflex img {
-        width: 10cqw;
-        height: 10cqw;
-        margin-top: auto;
+    #mainflex {
+        width: 100%;
+    }
+    #welcomeflex {
+        width: 350px;
+        height: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    #welcomeflex h1 {        
+        font-size: 22px;
+    }
+    
+    #welcomeflex img {
+        width: 150px;
+        height: 75px;
+    }
+
+    #featuredflex {       
+        width: 350px;
+        height: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #featuredflex h2 {        
+        font-size: 25px;       
+    }
+     
+    #featuredflex button {
+        width: 125px;
+        height: 30px;       
+    }
+       
+    #featuredserver {        
+        width: 300px;
+        height: 150px;       
+    }
+    
+    #featuredserver img {
+        height: 70px;
+        width: 70px;       
+    }
+    
+    #featuredserver h3 {
+        font-size: 23px;        
+    }
+   
+    #featuredserver button {
+        width: 150px;
+        height: 30px;        
+    }
+      
+    #featuredserver2 {        
+        width: 300px;
+        height: 150px;      
+    }
+    
+    #featuredserver2 img {
+        height: 70px;
+        width: 70px;         
+    }
+    
+    #featuredserver2 h3 {
+        font-size: 23px;       
+    }
+       
+    #featuredserver2 button {
+        width: 150px;
+        height: 30px;     
+    }
+    
+    #featuredserver3 {
+        width: 300px;
+        height: 150px; 
+    }
+    
+    #featuredserver3 img {
+        height: 70px;
+        width: 70px; 
+    }
+    
+    #featuredserver3 h3 {
+        font-size: 23px;
+        width: 100px;
+        margin-top: 5px;
+    }
+    
+    #featuredserver3 button {
+        width: 150px;
+        height: 30px; 
+    }
+
+    #featuredserver3 a {
+        margin-top: -20px;  
     }
 }
 
 @media screen and (min-width: 800px) {
     #title span {
         font-size: 40px;
-    }
-    #mainflex span {
-        font-size: 35px;
-    }
-    #featuredflex span {
-        font-size: 2cqw;
     }
 }
 
@@ -200,26 +442,11 @@ body {
     #burgerinfo span {
         font-size: 3.5cqw;
     }
-    #featuredflex img {
-        width: 12cqw;
-        height: 12cqw;
-        margin-top: auto;
-    }
-    #mainflex span {
-        font-size: 4cqw;
-    }
 }
 
-@media screen and (min-width: 1100px) {
-    #featuredflex img {
-        width: 6cqw;
-        height: 6cqw;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    #featuredflex img {
-        height: 5cqw;
-        width: 5cqw;
+@media screen and (max-width: 1250px) {
+    #mainflex {
+        display: block;
+        height: 1400px;
     }
 }
