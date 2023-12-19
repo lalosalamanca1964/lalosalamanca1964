@@ -38,13 +38,13 @@ const JBNinfo = {
 document.getElementById("JBNMemCountFSL").innerHTML = JBNinfo.membercount; 
 //JBN---------------!
 
-//JBB---------------!
+//JB Bananas---------------!
 const JBBinfo = {
     membercount: "2720"
 };
 
 document.getElementById("JBBMemCountFSL").innerHTML = JBBinfo.membercount; 
-//JBB---------------!
+//JB Bananas---------------!
 
 //RTHQ---------------!
 const RTHQinfo = {
@@ -62,13 +62,13 @@ const JBGinfo = {
 document.getElementById("JBGMemCountFSL").innerHTML = JBGinfo.membercount;
 //JB Grinders----------!
 
-//JB Bananas-------!
+//JB Cash-------!
 const JBCinfo = {
     membercount: "2102"
 }
 
 document.getElementById("JBCMemCountFSL").innerHTML = JBCinfo.membercount;
-//JB Bananas-------!
+//JB Cash-------!
 
 //NPC Trade Station-------!
 const NPCinfo = {
