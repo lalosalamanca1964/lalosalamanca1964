@@ -99,7 +99,7 @@ body {
     flex-flow: row wrap;
     width: 100%;
     height: 1000px;
-    border: 3px dotted white;
+    border: 3px dotted transparent;
 }
 
 #namebox {
@@ -216,14 +216,39 @@ body {
 
 #giveawaybox {
     display: flex;
+    flex-flow: column wrap;
     width: 400px;
     height: 300px;
-    border: 3px dotted white;
+    border: 5px solid white;
     border-radius: 25px;
     margin-top: 0px;
     margin-right: auto;
     margin-left: 25px;
     rotate: -3deg;
+}
+
+#giveawayboxtop {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border-bottom: 5px solid white;
+    justify-content: center;
+    align-items: center;
+}
+
+#giveawayboxtop h2 {
+    font-size: 25px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+#giveawaybox span {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    align-self: center;
 }
 
 #staffbox {
@@ -240,6 +265,69 @@ body {
     }
     #burgerinfo {
         width: 95%;
+    }
+    #namebox {
+        width: 350px;
+        height: 250px;
+    }
+    #nameboxtop {
+        width: 100%;
+        height: 90px;
+    }    
+    #nameboxtop h1 {
+        font-size: 25px;
+    }    
+    #bannerbox {
+        width: 250px;
+        height: 150px;
+    }
+    #communitybox {
+        width: 350px;
+        height: 250px;
+        margin-top: 200px;
+        margin-left: auto;
+        margin-right: 25px;
+    }    
+    #communityboxtop {
+        width: 100%;
+        height: 75px;
+    }   
+    #communityboxtop h2 {
+        font-size: 20px;
+    }   
+    #communityboxleft {
+        width: 50%;
+        height: 170px;
+    }   
+    #communityboxleft span {
+        margin-top: 17px;
+        font-size: 17px;
+    }    
+    #communityboxright {
+        width: 50%;
+        height: 140px;
+    }    
+    #communityboxright img {
+        height: 80px;
+        width: 80px;
+    }   
+    #communityboxright span {
+        font-size: 17px;
+    }
+    #giveawaybox {
+        width: 350px;
+        height: 250px;
+    }   
+    #giveawayboxtop {
+        width: 100%;
+        height: 75px;
+    }    
+    #giveawayboxtop h2 {
+        font-size: 20px;
+    }   
+    #giveawaybox span {
+        font-size: 17px;
+        margin-top: 17px;
     }
 }
 
