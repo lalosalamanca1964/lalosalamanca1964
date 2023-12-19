@@ -4,13 +4,13 @@ var urlParams = new URLSearchParams(window.location.search);
 
 //JBTS---------------!
 const JBTSinfo = {
-    gif:"images/IMG_8198.GIF",
+    gif:"IMG_8198.GIF",
     name:"Jailbreak Trading Shifters",
     infoName:"JBTS",
     membercount:"1276",
     date:"11/07/22",
     focus:"Trading",
-    serverImage:"images/F9DFE05A-5DD1-43C4-B268-F0F57114884E_1_201_a.jpeg",
+    serverImage:"F9DFE05A-5DD1-43C4-B268-F0F57114884E_1_201_a.jpeg",
     serverLink:"discord.gg/jbts",
     channels:"27",
     frequency:"Often",
@@ -38,13 +38,13 @@ if (urlParams.has("JBTS")) {JBTS();}
 
 //JBV---------------!
 const JBVinfo = {
-    gif:"images/jbvalues_banner.gif",
+    gif:"jbvalues_banner.gif",
     name:"JB Values (JBV)",
     infoName:"JBV",
     membercount:"2257",
     date:"11/06/22",
     focus:"Values",
-    serverImage:"images/IMG_7798.jpeg",
+    serverImage:"IMG_7798.jpeg",
     serverLink:"discord.gg/jbv",
     channels:"",
     frequency:"",
@@ -78,7 +78,7 @@ const JBNinfo = {
     membercount:"2132",
     date:"11/06/22",
     focus:"Trading",
-    serverImage:"images/B7B1F86D-8AA9-490C-B97A-CED3AB62AE29_1_201_a.jpeg",
+    serverImage:"B7B1F86D-8AA9-490C-B97A-CED3AB62AE29_1_201_a.jpeg",
     serverLink:"discord.gg/jbn",
     channels:"",
     frequency:"",
@@ -106,13 +106,13 @@ if (urlParams.has("JBN")) {JBN();}
 
 //JBCash---------------!
 const JBCashinfo = {
-    gif:"images/jbcashbanner.png",
+    gif:"jbcashbanner.png",
     name:"Jailbreak Cash",
     infoName:"JB Cash",
     membercount:"2102",
     date:"06/12/23",
     focus:"Grinding",
-    serverImage:"images/jbcash.gif",
+    serverImage:"jbcash.gif",
     serverLink:"https://discord.gg/jailbreak-cash-1117903758614069359",
     channels:"",
     frequency:"",
