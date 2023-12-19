@@ -79,3 +79,29 @@ function JBN() {
 
 if (urlParams.has("JBN")) {JBN();}
 //JBN---------------!
+
+//JBCash---------------!
+const JBCashinfo = {
+    gif:"jbcashbanner.png",
+    name:"Jailbreak Cash",
+    infoName:"JB Cash",
+    membercount:"2102",
+    date:"06/12/23",
+    focus:"Grinding",
+    serverImage:"jbcash.gif",
+    serverLink:"https://discord.gg/jailbreak-cash-1117903758614069359"
+}
+
+function JBCash() {
+    document.getElementById("nameboxtoptext").innerHTML = JBCashinfo.name; 
+    document.getElementById("ServerGif").src = JBCashinfo.gif;
+    document.getElementById("InfoTop").innerHTML = JBCashinfo.infoName + " - Info"; 
+    document.getElementById("Members").innerHTML = "Members - " + JBCashinfo.membercount;
+    document.getElementById("CreDate").innerHTML = "Created - " + JBCashinfo.date;
+    document.getElementById("Focus").innerHTML = "Focus - " + JBCashinfo.focus;
+    document.getElementById("ServerImg").src = JBCashinfo.serverImage;
+    document.getElementById("ServerLink").href = JBCashinfo.serverLink;
+}
+
+if (urlParams.has("JBCash")) {JBCash();}
+//JBCash---------------!
