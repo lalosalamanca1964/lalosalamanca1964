@@ -78,6 +78,30 @@ const NPCinfo = {
 document.getElementById("NPCMemCountFSL").innerHTML = NPCinfo.membercount;
 //NPC Trade Station-------!
 
+//JB Street---------!
+const JBStreetinfo = {
+    membercount: "2253"
+}
+
+document.getElementById("JBStreetMemCountFSL").innerHTML = JBStreetinfo.membercount;
+//JB Street---------!
+
+//JB Enforcers---------!
+const JBEnforcersinfo = {
+    membercount: "178"
+}
+
+document.getElementById("JBEnforcersMemCountFSL").innerHTML = JBEnforcersinfo.membercount;
+//JB Enforcers---------!
+
+//JB Enforcers---------!
+const JBBeachinfo = {
+    membercount: "730"
+}
+
+document.getElementById("JBBeachMemCountFSL").innerHTML = JBBeachinfo.membercount;
+//JB Enforcers---------!
+
 document.addEventListener("DOMContentLoaded", function () {
     console.log("DOM content loaded");
 
