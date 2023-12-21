@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: #212121;
 }
 
 #head {
@@ -32,25 +32,13 @@ body {
     justify-content: space-evenly;
     height: inherit;
     width: 75%;
-    border: 3px solid white;
+    border: 3px solid #323232;
     border-radius: 45px;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     border-collapse: collapse;
-    background-image: linear-gradient(
-  45deg,
-  hsl(240deg 100% 20%) 0%,
-  hsl(289deg 100% 21%) 11%,
-  hsl(315deg 100% 27%) 22%,
-  hsl(329deg 100% 36%) 33%,
-  hsl(337deg 100% 43%) 44%,
-  hsl(357deg 91% 59%) 56%,
-  hsl(17deg 100% 59%) 67%,
-  hsl(34deg 100% 53%) 78%,
-  hsl(45deg 100% 50%) 89%,
-  hsl(55deg 100% 50%) 100%
-);
+    background-image: linear-gradient(to right, #14ffec, #0d7377, #323232, #212121)
 }
 
 #title span {
@@ -61,11 +49,12 @@ body {
 
 #title img {
     background-color: transparent;
-    width: 40px;
-    height: 40%;
+    width: 75px;
+    height: 75%;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid #323232;
     animation: rotate 5s infinite;
+    opacity: 75%;
 }
 
 #burgerinfo {
@@ -75,14 +64,13 @@ body {
     width: 70%;
     height: 50px;
     display: flex;
-    border: 3px solid white;
+    border: 3px solid #323232;
     border-radius: 30px;
-    background-color: black;
+    background-color: #212121;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-evenly;
     align-items: center;
-    background-color: black;
     z-index: 1;
 }
 
@@ -90,6 +78,10 @@ body {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 115%;
+}
+
+#burgerinfo span:hover {
+    color: rgba(255,255,255, 0.6);
 }
 
 #burgerinfo a {
@@ -102,10 +94,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-    height: 1250px;
+    height: 1000px;
     border: 3px dotted transparent;
     border-radius: 25px;
-    margin-top: 50px;
+    margin-top: 15px;
     z-index: -1;
 }
 
@@ -114,10 +106,10 @@ body {
     flex-flow: column;
     width: 400px;
     height: 250px;
-    border: 3px solid white;
+    border: 5px solid #323232;
     border-radius: 45px;
     margin-left: 15px;
-    margin-top: -10px;
+    margin-top: 50px;
     rotate: -3deg;
 }
 
@@ -129,7 +121,7 @@ body {
     margin-right: auto;
     margin-top: 25px;
     z-index: inherit;
-    border-top: 3px solid white;
+    border-top: 5px solid #323232;
 }
 
 #welcomeflex img {
@@ -146,11 +138,11 @@ body {
     align-items: center;
     width: 400px;
     height: 900px;
-    border: 3px solid white;
+    border: 5px solid #323232;
     border-radius: 45px;
     margin-left: auto;
     margin-right: 15px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 #featuredflex h2 {
@@ -171,14 +163,15 @@ body {
 #featuredflex button {
     width: 150px;
     height: 30px;
-    border: 3px solid white;
+    border: 3px solid #323232;
     border-radius: 45px;
     color: white;
-    background-color: black;
+    background-color: #212121;
 }
 
 #featuredflex button:hover {
     cursor: pointer;
+    color: rgba(255,255,255, 0.6);
 }
 
 #featuredserver {
@@ -187,7 +180,7 @@ body {
     justify-content: space-evenly;
     width: 350px;
     height: 200px;
-    border: 3px solid white;
+    border: 3px solid #323232;
     border-radius: 25px;
     margin-top: 45px;
     rotate: 2deg;
@@ -196,7 +189,7 @@ body {
 #featuredserver img {
     height: 75px;
     width: 75px;
-    border: 3px solid white;
+    border: 3px solid #323232;
     border-radius: 50%;
     border-collapse: collapse;
     margin-top: 10px;
@@ -217,14 +210,15 @@ body {
 #featuredserver button {
     width: 175px;
     height: 35px;
-    border: 3px solid white;
+    border: 3px solid #323232;
     border-radius: 45px;
     color: white;
-    background-color: black;
+    background-color: #212121;
 }
 
 #featuredserver button:hover {
     cursor: pointer;
+    color: rgba(255,255,255, 0.6);
 }
 
 #featuredserver2 {
@@ -233,7 +227,7 @@ body {
     justify-content: space-evenly;
     width: 350px;
     height: 200px;
-    border: 3px solid white;
+    border: 3px solid #323232;
     border-radius: 25px;
     margin-top: 45px;
     rotate: -2deg;
@@ -242,7 +236,7 @@ body {
 #featuredserver2 img {
     height: 75px;
     width: 75px;
-    border: 3px solid white;
+    border: 3px solid #323232;
     border-radius: 50%;
     border-collapse: collapse;
     margin-top: 10px;
@@ -263,14 +257,15 @@ body {
 #featuredserver2 button {
     width: 175px;
     height: 35px;
-    border: 3px solid white;
+    border: 3px solid #323232;
     border-radius: 45px;
     color: white;
-    background-color: black;
+    background-color: #212121;
 }
 
 #featuredserver2 button:hover {
     cursor: pointer;
+    color: rgba(255,255,255, 0.6);
 }
 
 #featuredserver3 {
@@ -279,7 +274,7 @@ body {
     justify-content: space-evenly;
     width: 350px;
     height: 200px;
-    border: 3px solid white;
+    border: 3px solid #323232;
     border-radius: 25px;
     margin-top: 45px;
     rotate: 2deg;
@@ -288,7 +283,7 @@ body {
 #featuredserver3 img {
     height: 75px;
     width: 75px;
-    border: 3px solid white;
+    border: 3px solid #323232;
     border-radius: 50%;
     border-collapse: collapse;
     margin-top: 10px;
@@ -310,14 +305,15 @@ body {
 #featuredserver3 button {
     width: 175px;
     height: 35px;
-    border: 3px solid white;
+    border: 3px solid #323232;
     border-radius: 45px;
     color: white;
-    background-color: black;
+    background-color: #212121;
 }
 
 #featuredserver3 button:hover {
     cursor: pointer;
+    color: rgba(255,255,255, 0.6);
 }
 
 @media screen and (max-width: 800px) {
@@ -332,6 +328,7 @@ body {
     }
     #mainflex {
         width: 100%;
+        height: 1100px;
     }
     #welcomeflex {
         width: 350px;
@@ -433,6 +430,9 @@ body {
     #title span {
         font-size: 40px;
     }
+    #mainflex {
+        height: 1250px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -447,6 +447,11 @@ body {
 @media screen and (max-width: 1250px) {
     #mainflex {
         display: block;
-        height: 1400px;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    #mainflex {
+        height: 1000px;
     }
 }
