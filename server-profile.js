@@ -2,138 +2,207 @@
 var urlParams = new URLSearchParams(window.location.search);
 //*
 
-//JBTS---------------!
-const JBTSinfo = {
-    gif:"images/IMG_8198.GIF",
-    name:"Jailbreak Trading Shifters",
-    infoName:"JBTS",
-    membercount:"1276",
-    date:"11/07/22",
-    focus:"Trading",
-    serverImage:"images/F9DFE05A-5DD1-43C4-B268-F0F57114884E_1_201_a.jpeg",
-    serverLink:"discord.gg/jbts",
-    channels:"27",
-    frequency:"Often",
-    boosterPerks:"3x Entries",
-    top3:"HyperShift, 10x Torpedos, 2x Torpedos",
+const serverInfo = {
+    "JBTS": {
+        "name": "Jailbreak Trading Shifters",
+        "shortHand": "JBTS",
+        "memberCount": "1276",
+        "date": "11/07/22",
+        "focus": "Trading",
+        "serverImage": "images/F9DFE05A-5DD1-43C4-B268-F0F57114884E_1_201_a.jpeg",
+        "serverLink": "discord.gg/jbts",
+        "serverGif": "images/IMG_8198.GIF",
+        "channelCount": "27",
+        "giveawayFrequency": "Often",
+        "boosterPerks": "3x Entries",
+        "giveawayTop3": "HyperShift, 10x Torpedos, 2x Torpedos",
+    },
+    "JBV": {
+        "name": "JB Values (JBV)",
+        "shortHand": "JBV",
+        "memberCount": "47168",
+        "date": "9/28/22",
+        "focus": "Values",
+        "serverImage": "images/IMG_7798.jpeg",
+        "serverLink": "discord.gg/jbv",
+        "serverGif": "images/jbvalues_banner.gif",
+        "channelCount": "110",
+        "giveawayFrequency": "Very Often",
+        "boosterPerks": "2x Entries",
+        "giveawayTop3": "20x Season Passes, 8x Beignets, Red 5",
+    },
+    "JBNation": {
+        "name": "Jailbreak Nation",
+        "shortHand": "JBN",
+        "memberCount": "2132",
+        "date": "05/27/23",
+        "focus": "Giveaways",
+        "serverImage": "images/B7B1F86D-8AA9-490C-B97A-CED3AB62AE29_1_201_a.jpeg",
+        "serverLink": "discord.gg/jbn",
+        "serverGif": "images/IMG_8198.GIF",
+        "channelCount": "22",
+        "giveawayFrequency": "Often",
+        "boosterPerks": "2x Claim Time",
+        "giveawayTop3": "Hypershift, 7x Celsiors, 2x Torpedos",
+    },
+    "JBSellers": {
+        "name": "",
+        "shortHand": "",
+        "memberCount": "",
+        "date": "",
+        "focus": "",
+        "serverImage": "",
+        "serverLink": "",
+        "serverGif": "images/IMG_8198.GIF",
+        "channelCount": "",
+        "giveawayFrequency": "",
+        "boosterPerks": "",
+        "giveawayTop3": "",
+    },
+    "JBBananas": {
+        "name": "",
+        "shortHand": "",
+        "memberCount": "",
+        "date": "",
+        "focus": "",
+        "serverImage": "",
+        "serverLink": "",
+        "serverGif": "images/IMG_8198.GIF",
+        "channelCount": "",
+        "giveawayFrequency": "",
+        "boosterPerks": "",
+        "giveawayTop3": "",
+    },
+    "JBTC": {
+        "name": "",
+        "shortHand": "",
+        "memberCount": "",
+        "date": "",
+        "focus": "",
+        "serverImage": "",
+        "serverLink": "",
+        "serverGif": "images/IMG_8198.GIF",
+        "channelCount": "",
+        "giveawayFrequency": "",
+        "boosterPerks": "",
+        "giveawayTop3": "",
+    },
+    "JBGrinders": {
+        "name": "",
+        "shortHand": "",
+        "memberCount": "",
+        "date": "",
+        "focus": "",
+        "serverImage": "",
+        "serverLink": "",
+        "serverGif": "images/IMG_8198.GIF",
+        "channelCount": "",
+        "giveawayFrequency": "",
+        "boosterPerks": "",
+        "giveawayTop3": "",
+    },
+    "JBCash": {
+        "name": "Jailbreak Cash",
+        "shortHand": "JB Cash",
+        "memberCount": "2102",
+        "date": "06/12/23",
+        "focus": "Grinding",
+        "serverImage": "images/jbcash.gif",
+        "serverLink": "https://discord.gg/jailbreak-cash-1117903758614069359",
+        "serverGif": "images/IMG_8198.GIF",
+        "channelCount": "17",
+        "giveawayFrequency": "Moderate",
+        "boosterPerks": "x2 Entries",
+        "giveawayTop3": "Torpedo, x2 Icebreakers, x2 Beam Hybrids",
+    },
+    "NPCTrade": {
+        "name": "",
+        "shortHand": "",
+        "memberCount": "",
+        "date": "",
+        "focus": "",
+        "serverImage": "",
+        "serverLink": "",
+        "serverGif": "images/IMG_8198.GIF",
+        "channelCount": "",
+        "giveawayFrequency": "",
+        "boosterPerks": "",
+        "giveawayTop3": "",
+    },
+    "JBStreet": {
+        "name": "",
+        "shortHand": "",
+        "memberCount": "",
+        "date": "",
+        "focus": "",
+        "serverImage": "",
+        "serverLink": "",
+        "serverGif": "images/IMG_8198.GIF",
+        "channelCount": "",
+        "giveawayFrequency": "",
+        "boosterPerks": "",
+        "giveawayTop3": "",
+    },
+    "JBEnforcers": {
+        "name": "",
+        "shortHand": "",
+        "memberCount": "",
+        "date": "",
+        "focus": "",
+        "serverImage": "",
+        "serverLink": "",
+        "serverGif": "images/IMG_8198.GIF",
+        "channelCount": "",
+        "giveawayFrequency": "",
+        "boosterPerks": "",
+        "giveawayTop3": "",
+    },
+    "JBBeach": {
+        "name": "",
+        "shortHand": "",
+        "memberCount": "",
+        "date": "",
+        "focus": "",
+        "serverImage": "",
+        "serverLink": "",
+        "serverGif": "images/IMG_8198.GIF",
+        "channelCount": "",
+        "giveawayFrequency": "",
+        "boosterPerks": "",
+        "giveawayTop3": "",
+    },
+    "": {
+        "name": "",
+        "shortHand": "",
+        "memberCount": "",
+        "date": "",
+        "focus": "",
+        "serverImage": "",
+        "serverLink": "",
+        "serverGif": "",
+        "channelCount": "",
+        "giveawayFrequency": "",
+        "boosterPerks": "",
+        "giveawayTop3": "",
+    },
 }
 
-function JBTS() {
-    document.getElementById("nameboxtoptext").innerHTML = JBTSinfo.name; 
-    document.getElementById("ServerGif").src = JBTSinfo.gif;
-    document.getElementById("InfoTop").innerHTML = JBTSinfo.infoName + " - Info"; 
-    document.getElementById("Members").innerHTML = "Members - " + JBTSinfo.membercount;
-    document.getElementById("CreDate").innerHTML = "Created - " + JBTSinfo.date;
-    document.getElementById("Focus").innerHTML = "Focus - " + JBTSinfo.focus;
-    document.getElementById("ServerImg").src = JBTSinfo.serverImage;
-    document.getElementById("ServerLink").href = JBTSinfo.serverLink;
-    document.getElementById("Channels").innerHTML = "Channels - " + JBTSinfo.channels;
-    document.getElementById("Freq").innerHTML = "Giveaway Frequency - " + JBTSinfo.frequency;
-    document.getElementById("Boost").innerHTML = "Booster Perks - " + JBTSinfo.boosterPerks;
-    document.getElementById("Top3").innerHTML = JBTSinfo.top3;
-}
+function updateServerInfo(serverName) {
+    const info = serverInfo[serverName];
+    document.getElementById("nameboxtoptext").innerHTML = info.name; 
+    document.getElementById("ServerGif").src = info.serverGif;
+    document.getElementById("InfoTop").innerHTML = info.shortHand + " - Info"; 
+    document.getElementById("Members").innerHTML = "Members - " + info.memberCount;
+    document.getElementById("CreDate").innerHTML = "Created - " + info.date;
+    document.getElementById("Focus").innerHTML = "Focus - " + info.focus;
+    document.getElementById("ServerImg").src = info.serverImage;
+    document.getElementById("ServerLink").href = info.serverLink;
+    document.getElementById("Channels").innerHTML = "Channels - " + info.channelCount;
+    document.getElementById("Freq").innerHTML = "Giveaway Frequency - " + info.giveawayFrequency;
+    document.getElementById("Boost").innerHTML = "Booster Perks - " + info.boosterPerks;
+    document.getElementById("Top3").innerHTML = info.giveawayTop3;
+}  
 
-if (urlParams.has("JBTS")) {JBTS();}
-//JBTS---------------!
-
-//JBV---------------!
-const JBVinfo = {
-    gif:"images/jbvalues_banner.gif",
-    name:"JB Values (JBV)",
-    infoName:"JBV",
-    membercount:"2257",
-    date:"11/06/22",
-    focus:"Values",
-    serverImage:"images/IMG_7798.jpeg",
-    serverLink:"discord.gg/jbv",
-    channels:"",
-    frequency:"",
-    boosterPerks:"",
-    top3:"",
-}
-
-function JBV() {
-    document.getElementById("nameboxtoptext").innerHTML = JBVinfo.name; 
-    document.getElementById("ServerGif").src = JBVinfo.gif;
-    document.getElementById("InfoTop").innerHTML = JBVinfo.infoName + " - Info"; 
-    document.getElementById("Members").innerHTML = "Members - " + JBVinfo.membercount;
-    document.getElementById("CreDate").innerHTML = "Created - " + JBVinfo.date;
-    document.getElementById("Focus").innerHTML = "Focus - " + JBVinfo.focus;
-    document.getElementById("ServerImg").src = JBVinfo.serverImage;
-    document.getElementById("ServerLink").href = JBVinfo.serverLink;
-    document.getElementById("Channels").innerHTML = "Channels - " + JBVinfo.channels;
-    document.getElementById("Freq").innerHTML = "Giveaway Frequency - " + JBVinfo.frequency;
-    document.getElementById("Boost").innerHTML = "Booster Perks - " + JBVinfo.boosterPerks;
-    document.getElementById("Top3").innerHTML = JBVinfo.top3;
-}
-
-if (urlParams.has("JBV")) {JBV();}
-//JBV---------------!
-
-//JBN---------------!
-const JBNinfo = {
-    gif:"",
-    name:"Jailbreak Nation",
-    infoName:"JBN",
-    membercount:"2132",
-    date:"11/06/22",
-    focus:"Trading",
-    serverImage:"images/B7B1F86D-8AA9-490C-B97A-CED3AB62AE29_1_201_a.jpeg",
-    serverLink:"discord.gg/jbn",
-    channels:"",
-    frequency:"",
-    boosterPerks:"",
-    top3:"",
-}
-
-function JBN() {
-    document.getElementById("nameboxtoptext").innerHTML = JBNinfo.name; 
-    document.getElementById("ServerGif").src = JBNinfo.gif;
-    document.getElementById("InfoTop").innerHTML = JBNinfo.infoName + " - Info"; 
-    document.getElementById("Members").innerHTML = "Members - " + JBNinfo.membercount;
-    document.getElementById("CreDate").innerHTML = "Created - " + JBNinfo.date;
-    document.getElementById("Focus").innerHTML = "Focus - " + JBNinfo.focus;
-    document.getElementById("ServerImg").src = JBNinfo.serverImage;
-    document.getElementById("ServerLink").href = JBNinfo.serverLink;
-    document.getElementById("Channels").innerHTML = "Channels - " + JBNinfo.channels;
-    document.getElementById("Freq").innerHTML = "Giveaway Frequency - " + JBNinfo.frequency;
-    document.getElementById("Boost").innerHTML = "Booster Perks - " + JBNinfo.boosterPerks;
-    document.getElementById("Top3").innerHTML = JBNinfo.top3;
-}
-
-if (urlParams.has("JBN")) {JBN();}
-//JBN---------------!
-
-//JBCash---------------!
-const JBCashinfo = {
-    gif:"images/jbcashbanner.png",
-    name:"Jailbreak Cash",
-    infoName:"JB Cash",
-    membercount:"2102",
-    date:"06/12/23",
-    focus:"Grinding",
-    serverImage:"images/jbcash.gif",
-    serverLink:"https://discord.gg/jailbreak-cash-1117903758614069359",
-    channels:"",
-    frequency:"",
-    boosterPerks:"",
-    top3:"",
-}
-
-function JBCash() {
-    document.getElementById("nameboxtoptext").innerHTML = JBCashinfo.name; 
-    document.getElementById("ServerGif").src = JBCashinfo.gif;
-    document.getElementById("InfoTop").innerHTML = JBCashinfo.infoName + " - Info"; 
-    document.getElementById("Members").innerHTML = "Members - " + JBCashinfo.membercount;
-    document.getElementById("CreDate").innerHTML = "Created - " + JBCashinfo.date;
-    document.getElementById("Focus").innerHTML = "Focus - " + JBCashinfo.focus;
-    document.getElementById("ServerImg").src = JBCashinfo.serverImage;
-    document.getElementById("ServerLink").href = JBCashinfo.serverLink;
-    document.getElementById("Channels").innerHTML = "Channels - " + JBCashinfo.channels;
-    document.getElementById("Freq").innerHTML = "Giveaway Frequency - " + JBCashinfo.frequency;
-    document.getElementById("Boost").innerHTML = "Booster Perks - " + JBCashinfo.boosterPerks;
-    document.getElementById("Top3").innerHTML = JBCashinfo.top3;
-}
-
-if (urlParams.has("JBCash")) {JBCash();}
-//JBCash---------------!
+if (urlParams.has("JBTS")) {updateServerInfo("JBTS");}
+if (urlParams.has("JBV")) {updateServerInfo("JBV");}
+if (urlParams.has("JBCash")) {updateServerInfo("JBCash");}
