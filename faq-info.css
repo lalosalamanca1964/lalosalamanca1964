@@ -213,6 +213,40 @@ body {
     text-align: center;
 }
 
+#answerdropdown4 {
+    display: none;
+    width: 75%;
+    height: auto;
+    border: 2px solid #323232;
+    border-radius: 25px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+}
+
+#answerdropdown4 span {
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 75%;
+    text-align: center;
+}
+
+#socialsflex {
+    display: flex;
+    flex-flow: row;
+    width: 200px;
+    height: 85px;
+    border: 3px solid #323232;
+    border-radius: 45px;
+    margin-top: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @media screen and (max-width: 800px) {
     #title {
         width: 100%;
