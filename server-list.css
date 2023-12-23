@@ -52,9 +52,8 @@ body {
     width: 75px;
     height: 75%;
     border-radius: 50%;
-    border: 3px solid #323232;
-    animation: rotate 5s infinite;
-    opacity: 75%;
+    border: 3px solid transparent;
+    opacity: 80%;
 }
 
 #burgerinfo {
@@ -281,6 +280,10 @@ body {
 @media screen and (min-width: 800px) {
     #title span {
         font-size: 40px;
+    }
+    #title img {
+        height: 80%;
+        width: 80px;
     }
     #mainlistflex {
         width: 75%;
