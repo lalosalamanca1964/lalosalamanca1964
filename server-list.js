@@ -1,6 +1,6 @@
 //JBTC------------!
 const JBTCinfo = {
-    membercount: "20788"
+    membercount: "20804"
 };
 
 document.getElementById("JBTCMemCountFSL").innerHTML = JBTCinfo.membercount; 
@@ -8,7 +8,7 @@ document.getElementById("JBTCMemCountFSL").innerHTML = JBTCinfo.membercount;
 
 //JBSellers---------!
 const JBSinfo = {
-    membercount: "1085"
+    membercount: "1283"
 };
 
 document.getElementById("JBSMemCountFSL").innerHTML = JBSinfo.membercount; 
@@ -16,7 +16,7 @@ document.getElementById("JBSMemCountFSL").innerHTML = JBSinfo.membercount;
 
 //JBTS---------------!
 const JBTSinfo = {
-    membercount: "1276"
+    membercount: "2706"
 };
 
 document.getElementById("JBTSMemCountFSL").innerHTML = JBTSinfo.membercount; 
@@ -24,7 +24,7 @@ document.getElementById("JBTSMemCountFSL").innerHTML = JBTSinfo.membercount;
 
 //JBV----------------!
 const JBVinfo = {
-    membercount: "47095"
+    membercount: "47168"
 };
 
 document.getElementById("JBVMemCountFSL").innerHTML = JBVinfo.membercount; 
@@ -32,7 +32,7 @@ document.getElementById("JBVMemCountFSL").innerHTML = JBVinfo.membercount;
 
 //JBN---------------!
 const JBNinfo = {
-    membercount: "2035"
+    membercount: "2042"
 };
 
 document.getElementById("JBNMemCountFSL").innerHTML = JBNinfo.membercount; 
@@ -40,7 +40,7 @@ document.getElementById("JBNMemCountFSL").innerHTML = JBNinfo.membercount;
 
 //JB Bananas---------------!
 const JBBinfo = {
-    membercount: "2720"
+    membercount: "2675"
 };
 
 document.getElementById("JBBMemCountFSL").innerHTML = JBBinfo.membercount; 
@@ -48,7 +48,7 @@ document.getElementById("JBBMemCountFSL").innerHTML = JBBinfo.membercount;
 
 //RTHQ---------------!
 const RTHQinfo = {
-    membercount: "1062"
+    membercount: "803"
 };
 
 document.getElementById("RTHQMemCountFSL").innerHTML = RTHQinfo.membercount; 
@@ -56,7 +56,7 @@ document.getElementById("RTHQMemCountFSL").innerHTML = RTHQinfo.membercount;
 
 //JB Grinders----------!
 const JBGinfo = {
-    membercount: "5406"
+    membercount: "5390"
 }
 
 document.getElementById("JBGMemCountFSL").innerHTML = JBGinfo.membercount;
@@ -72,7 +72,7 @@ document.getElementById("JBCMemCountFSL").innerHTML = JBCinfo.membercount;
 
 //NPC Trade Station-------!
 const NPCinfo = {
-    membercount: "223"
+    membercount: "234"
 }
 
 document.getElementById("NPCMemCountFSL").innerHTML = NPCinfo.membercount;
@@ -80,7 +80,7 @@ document.getElementById("NPCMemCountFSL").innerHTML = NPCinfo.membercount;
 
 //JB Street---------!
 const JBStreetinfo = {
-    membercount: "2253"
+    membercount: "2232"
 }
 
 document.getElementById("JBStreetMemCountFSL").innerHTML = JBStreetinfo.membercount;
@@ -88,7 +88,7 @@ document.getElementById("JBStreetMemCountFSL").innerHTML = JBStreetinfo.memberco
 
 //JB Enforcers---------!
 const JBEnforcersinfo = {
-    membercount: "178"
+    membercount: "191"
 }
 
 document.getElementById("JBEnforcersMemCountFSL").innerHTML = JBEnforcersinfo.membercount;
@@ -96,7 +96,7 @@ document.getElementById("JBEnforcersMemCountFSL").innerHTML = JBEnforcersinfo.me
 
 //JB Enforcers---------!
 const JBBeachinfo = {
-    membercount: "730"
+    membercount: "732"
 }
 
 document.getElementById("JBBeachMemCountFSL").innerHTML = JBBeachinfo.membercount;
