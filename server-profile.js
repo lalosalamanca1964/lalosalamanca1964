@@ -96,7 +96,7 @@ const serverInfo = {
         "serverImage": "images/grinders.png",
         "serverLink": "https://discord.gg/jailbreak-grinders-1008984623503659168",
         "serverGif": "images/directorydef.png",
-        "channel Count": "29",
+        "channelCount": "29",
         "giveawayFrequency": "Rarely",
         "boosterPerks": "3x Entries",
         "giveawayTop3": "Beam, Torpedo, 850 Robux"
@@ -124,7 +124,7 @@ const serverInfo = {
         "serverImage": "images/tradestation.png",
         "serverLink": "https://discord.gg/HyFVfkaa7h",
         "serverGif": "images/directorydef.png",
-        "channel Count": "19",
+        "channelCount": "19",
         "giveawayFrequency": "Rarely",
         "boosterPerks": "N/A",
         "giveawayTop3": "Torpedo, Pink 3, Raptor"
@@ -138,7 +138,7 @@ const serverInfo = {
         "serverImage": "images/jbstreet.png",
         "serverLink": "https://discord.gg/jailbreak-trading-street-1126225799012429826",
         "serverGif": "images/directorydef.png",
-        "channel Count": "17",
+        "channelCount": "17",
         "giveawayFrequency": "Often",
         "boosterPerks": "2x Entries",
         "giveawayTop3": "Hypershift, 3x Torpedos, 2x Voids"
@@ -152,7 +152,7 @@ const serverInfo = {
         "serverImage": "images/enforcers.png",
         "serverLink": "https://discord.gg/p9CXMNpP3F",
         "serverGif": "images/directorydef.png",
-        "channel Count": "23",
+        "channelCount": "23",
         "giveawayFrequency": "Rarely",
         "boosterPerks": "N/A",
         "giveawayTop3": "300 Robux, Shogun, 1M Vehicle"
@@ -166,7 +166,7 @@ const serverInfo = {
         "serverImage": "images/jbbeach.png",
         "serverLink": "https://discord.gg/S9xXFU4ejm",
         "serverGif": "images/directorydef.png",
-        "channel Count": "29",
+        "channelCount": "29",
         "giveawayFrequency": "Sometimes",
         "boosterPerks": "2x Entries",
         "giveawayTop3": "3x Icebreakers, Orange 5, Beam"
