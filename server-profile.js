@@ -217,3 +217,41 @@ if (urlParams.has("JBStreet")) {updateServerInfo("JBStreet");}
 if (urlParams.has("JBEnforcers")) {updateServerInfo("JBEnforcers");}
 if (urlParams.has("JBBeach")) {updateServerInfo("JBBeach");}
 if (urlParams.has("HyperCentral")) {updateServerInfo("HyperCentral");}
+
+//Find a server's focus based off a search input for the server name
+
+//Converting JSON into an object 
+const stringJSON = JSON.stringify(serverInfo);
+const obj = JSON.parse(stringJSON);
+
+//Convert the object into an array
+const objArrayFormat = Object.entries(obj);
+
+//Display the object's keys in an array
+const serverKeysArray = Object.keys(obj);
+
+//Check if the user inputted server exists in serverKeysArray; if so, return the server name back
+function findServer(serverKeysArray, serverName) {
+    for (i = 0; i < serverKeysArray.length; i++) {
+        if (serverKeysArray[i] == serverName) {
+            return serverKeysArray[i];
+        }
+    }
+    return false;
+}
+
+findServer(serverKeysArray, 'JBBananas');
+
+//Find the server's focus by 1. getting the server name's array position in serverKeysArray
+//2. taking the server's position and grabbing the focus from objArrayFormat
+//3. returning the server's focus in string format
+function findFocus() {
+    const position = serverKeysArray.indexOf(serverKeysArray[i]);
+
+    const serverFocus = objArrayFormat[position][1].focus;
+
+    return serverFocus;
+
+}
+
+findFocus();
