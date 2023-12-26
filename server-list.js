@@ -94,13 +94,45 @@ const JBEnforcersinfo = {
 document.getElementById("JBEnforcersMemCountFSL").innerHTML = JBEnforcersinfo.membercount;
 //JB Enforcers---------!
 
-//JB Enforcers---------!
+//JB Beach---------!
 const JBBeachinfo = {
     membercount: "732"
 }
 
 document.getElementById("JBBeachMemCountFSL").innerHTML = JBBeachinfo.membercount;
-//JB Enforcers---------!
+//JB Beach---------!
+
+//JB Universe---------!
+const JBUniverseinfo = {
+    membercount: "171"
+}
+
+document.getElementById("JBUniverseMemCountFSL").innerHTML = JBUniverseinfo.membercount;
+//JB Universe---------!
+
+//JB Express---------!
+const JBExpressinfo = {
+    membercount: "939"
+}
+
+document.getElementById("JBExpressMemCountFSL").innerHTML = JBExpressinfo.membercount;
+//JB Express---------!
+
+//XZ Trading---------!
+const XZTradinginfo = {
+    membercount: "712"
+}
+
+document.getElementById("XZTradingMemCountFSL").innerHTML = XZTradinginfo.membercount;
+//XZ Trading---------!
+
+//JBTV--------!
+const JBTVinfo = {
+    membercount: "428"
+}
+
+document.getElementById("JBTVMemCountFSL").innerHTML = JBTVinfo.membercount;
+//JBTV--------!
 
 document.addEventListener("DOMContentLoaded", function () {
     console.log("DOM content loaded");
@@ -155,3 +187,42 @@ function sortServers(ascending) {
     // Log initial order before sorting
     console.log("Before Sorting:", serverArray);
 });
+
+
+//Find a server's focus based off a search input for the server name
+
+//Converting JSON into an object 
+const stringJSON = JSON.stringify(serverInfo);
+const obj = JSON.parse(stringJSON);
+
+//Convert the object into an array
+const objArrayFormat = Object.entries(obj);
+
+//Display the object's keys in an array
+const serverKeysArray = Object.keys(obj);
+
+//Check if the user inputted server exists in serverKeysArray; if so, return the server name back
+function findServer(serverKeysArray, serverName) {
+    for (i = 0; i < serverKeysArray.length; i++) {
+        if (serverKeysArray[i] == serverName) {
+            return serverKeysArray[i];
+        }
+    }
+    return false;
+}
+
+findServer(serverKeysArray, 'JBBananas');
+
+//Find the server's focus by 1. getting the server name's array position in serverKeysArray
+//2. taking the server's position and grabbing the focus from objArrayFormat
+//3. returning the server's focus in string format
+function findFocus() {
+    const position = serverKeysArray.indexOf(serverKeysArray[i]);
+
+    const serverFocus = objArrayFormat[position][1].focus;
+
+    return serverFocus;
+
+}
+
+findFocus();

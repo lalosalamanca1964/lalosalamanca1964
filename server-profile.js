@@ -185,6 +185,62 @@ const serverInfo = {
         "boosterPerks": "3x Entries",
         "giveawayTop3": "3x Torpedos, Purple 5, Icebreaker",
     },
+    "JBUniverse": {
+        "name": "Jailbreak Universe",
+        "shortHand": "JB Universe",
+        "memberCount": "171",
+        "date": "07/31/23",
+        "focus": "Trading",
+        "serverImage": "images/jbuniverse.png",
+        "serverLink": "https://discord.gg/9uW3cM8akJ",
+        "serverGif": "images/directorydef.png",
+        "channelCount": "21",
+        "giveawayFrequency": "Never",
+        "boosterPerks": "N/A",
+        "giveawayTop3": "N/A",
+    },
+    "JBExpress": {
+        "name": "Jailbreak Express",
+        "shortHand": "JB Express",
+        "memberCount": "939",
+        "date": "11/04/23",
+        "focus": "Giveaways",
+        "serverImage": "images/jbexpress.gif",
+        "serverLink": "https://discord.gg/8qqYpbFsWx",
+        "serverGif": "images/directorydef.png",
+        "channelCount": "24",
+        "giveawayFrequency": "Often",
+        "boosterPerks": "3x Entries",
+        "giveawayTop3": "3x Beams, 10x Bananas, 4x Torpedos",
+    },
+    "XZTrading": {
+        "name": "XZ Trading",
+        "shortHand": "XZ Trading",
+        "memberCount": "712",
+        "date": "02/09/22",
+        "focus": "Trading",
+        "serverImage": "images/xztrading.png",
+        "serverLink": "https://discord.gg/vb9MArFm5n",
+        "serverGif": "images/directorydef.png",
+        "channelCount": "24",
+        "giveawayFrequency": "Often",
+        "boosterPerks": "2x Entries",
+        "giveawayTop3": "2x Beignets, 2x Icebreakers, Diamond 5",
+    },
+    "JBTV": {
+        "name": "JB Trading Values",
+        "shortHand": "JBTV",
+        "memberCount": "428",
+        "date": "07/10/23",
+        "focus": "Values",
+        "serverImage": "images/jbtv.gif",
+        "serverLink": "https://discord.gg/2cuee7pmpB",
+        "serverGif": "images/directorydef.png",
+        "channelCount": "19",
+        "giveawayFrequency": "Sometimes",
+        "boosterPerks": "N/A",
+        "giveawayTop3": "Bandit, Brulee, Celsior",
+    },
 }
 
 function updateServerInfo(serverName) {
@@ -217,6 +273,10 @@ if (urlParams.has("JBStreet")) {updateServerInfo("JBStreet");}
 if (urlParams.has("JBEnforcers")) {updateServerInfo("JBEnforcers");}
 if (urlParams.has("JBBeach")) {updateServerInfo("JBBeach");}
 if (urlParams.has("HyperCentral")) {updateServerInfo("HyperCentral");}
+if (urlParams.has("JBUniverse")) {updateServerInfo("JBUniverse");}
+if (urlParams.has("JBExpress")) {updateServerInfo("JBExpress");}
+if (urlParams.has("XZTrading")) {updateServerInfo("XZTrading");}
+if (urlParams.has("JBTV")) {updateServerInfo("JBTV");}
 
 //Find a server's focus based off a search input for the server name
 
