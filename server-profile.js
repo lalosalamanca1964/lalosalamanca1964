@@ -217,7 +217,7 @@ const serverInfo = {
         "name": "XZ Trading",
         "shortHand": "XZ Trading",
         "memberCount": "712",
-        "date": "02/09/22",
+        "date": "09/14/23",
         "focus": "Trading",
         "serverImage": "images/xztrading.png",
         "serverLink": "https://discord.gg/vb9MArFm5n",
@@ -238,7 +238,7 @@ const serverInfo = {
         "serverGif": "images/directorydef.png",
         "channelCount": "19",
         "giveawayFrequency": "Sometimes",
-        "boosterPerks": "N/A",
+        "boosterPerks": "2x Entries",
         "giveawayTop3": "Bandit, Brulee, Celsior",
     },
 }
