@@ -73,6 +73,13 @@ body {
     z-index: 1;
 }
 
+#burgerinfo button {
+    background-color: #212121;
+    border: 3px solid #323232;
+    border-radius: 45px; 
+    height: 30px;
+}
+
 #burgerinfo span {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -81,6 +88,7 @@ body {
 
 #burgerinfo span:hover {
     color: rgba(255,255,255, 0.6);
+    cursor: pointer;
 }
 
 #burgerinfo a {
@@ -156,5 +164,15 @@ body {
 @media screen and (max-width: 500px) {
     #burgerinfo span {
         font-size: 3.5cqw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #burgerinfo button {
+        width: auto;
+        height: 30px;
+    }
+    #burgerinfo span {
+        font-size: 2.5cqw;
     }
 }
