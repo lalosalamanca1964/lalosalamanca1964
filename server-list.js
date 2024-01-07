@@ -48,7 +48,7 @@ document.getElementById("JBBMemCountFSL").innerHTML = JBBinfo.membercount;
 
 //RTHQ---------------!
 const RTHQinfo = {
-    membercount: "803"
+    membercount: "965"
 };
 
 document.getElementById("RTHQMemCountFSL").innerHTML = RTHQinfo.membercount; 

@@ -174,7 +174,7 @@ const serverInfo = {
     "HyperCentral": {
         "name": "Hyperchrome Central",
         "shortHand": "Hyper Central",
-        "memberCount": "803",
+        "memberCount": "965",
         "date": "12/08/22",
         "focus": "Grinding",
         "serverImage": "images/hypercentral.png",
@@ -183,7 +183,7 @@ const serverInfo = {
         "channelCount": "35",
         "giveawayFrequency": "Often",
         "boosterPerks": "3x Entries",
-        "giveawayTop3": "3x Torpedos, Purple 5, Icebreaker",
+        "giveawayTop3": "Green 5, Purple 5, Beam",
     },
     "JBUniverse": {
         "name": "Jailbreak Universe",
